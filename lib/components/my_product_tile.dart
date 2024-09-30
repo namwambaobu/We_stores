@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:we_stores/models/product.dart';
@@ -61,7 +59,7 @@ class MyProductTile extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20)),
                     padding: EdgeInsets.all(25),
                     width: double.infinity,
-                    child: Icon(Icons.favorite)),
+                    child: Image.asset(product.imagePath)),
               ),
               const SizedBox(
                 height: 20,

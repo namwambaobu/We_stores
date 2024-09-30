@@ -4,10 +4,36 @@ import 'package:we_stores/models/product.dart';
 class Shop extends ChangeNotifier {
   //products for sale
   final List<Product> _shop = [
-    Product(name: "Prod 1", price: 99.99, description: "some details"),
-    Product(name: "Prod 2", price: 99.99, description: "some details"),
-    Product(name: "Prod 3", price: 99.99, description: "some details"),
-    Product(name: "Prod 4", price: 99.99, description: "some details")
+    Product(
+        name: "Sunglasses",
+        price: 29.99,
+        description: "Sun cover for your eyes",
+        imagePath: 'assets/images/shades.png'),
+    Product(
+        name: "hoodies",
+        price: 49.99,
+        description: "in all colors and sizes, take your pick",
+        imagePath: 'assets/images/hoodie.png'),
+    Product(
+        name: "Pallazios",
+        price: 14.99,
+        description: "just hot, hot, hot",
+        imagePath: 'assets/images/pants.png'),
+    Product(
+        name: "Vans Boots",
+        price: 39.99,
+        description: "All purpose boots, with safty plates for toe cover",
+        imagePath: 'assets/images/boots.png'),
+    Product(
+        name: "Air Force",
+        price: 79.99,
+        description: "Hot and in Trend Snickers",
+        imagePath: 'assets/images/snicker.png'),
+    Product(
+        name: "Travel Pack",
+        price: 29.99,
+        description: "pretty Handy for short trips",
+        imagePath: 'assets/images/pack.png')
   ];
   //user cart
   List<Product> _cart = [];
